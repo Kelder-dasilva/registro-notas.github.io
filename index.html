@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/notas.js"></script>
+    <link rel="stylesheet" href="style/notas.css" />
+    <title>Dashboard Notas</title>
+</head>
+<body>
+    <nav class="navbar"> 
+        <div class="navDiv" style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="images/icone_satmob_contratosG.png" alt="Logo-SASW" width="60" height="60">
+            <button id="btnRecarregar" onclick="window.location.reload()">Recarregar</button>
+            <div>
+                <h3 class="title">DASHBOARD de Notas</h3>
+            </div>
+        </div>
+    </nav> 
+
+    <div class="divPai" id="divPai" style="display: flex; flex-direction: row; justify-content:center;">
+        <div class="cardEsquer">
+            <div class="FundoDash" id="FundoDash">
+                <div>
+                    <h3 class="TituloDash">Empresa X</h3>
+                    <table class="tabela" id="tabela1" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBRASIFORT">
+                            <label id="lbNaoTem1"> Não há Dados!</label>
+                            <div id="reload1" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="FundoDash" id="FundoDash"> 
+                <div>
+                    <h3 class="TituloDash">Empresa Y</h3>
+                    <table class="tabela" id="tabela2" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableIBL">
+                            <label id="lbNaoTem2" >Não há Dados!</label>
+                            <div id="reload2" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="FundoDash" id="FundoDash">
+                <div>
+                    <h3 class="TituloDash">Empresa Z</h3>
+                    <table class="tabela" id="tabela3" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableLOYAL">
+                            <label id="lbNaoTem3">Não há Dados!</label>
+                            <div id="reload3" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardMeio">
+            <div class="FundoDash" id="FundoDash">
+                <div>
+                    <h3 class="TituloDash">Empresa A</h3>
+                    <table class="tabela" id="tabela4" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableFIDELYS">
+                            <label id="lbNaoTem4">Não há Dados!</label>
+                            <div id="reload4" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="FundoDash" id="FundoDash">
+                <div>
+                    <h3 class="TituloDash">Empresa B</h3>
+                    <table class="tabela" id="tabela5" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableINTERFORT">
+                            <label id="lbNaoTem5">Não há Dados!</label>
+                            <div id="reload5" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="FundoDash" id="FundoDash">
+                <div>
+                    <h3 class="TituloDash">Empresa C</h3>
+                    <table class="tabela" id="tabela6" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablePRESERVE">
+                            <label id="lbNaoTem6">Não há Dados!</label>
+                            <div id="reload6" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cardDireito">
+            <div class="FundoDash" id="FundoDash">
+                <div>
+                    <h3 class="TituloDash">Empresa D</h3>
+                    <table class="tabela" id="tabela7" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableGLOBAL">
+                            <label id="lbNaoTem7">Não há Dados!</label>
+                            <div id="reload7" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="FundoDash" id="FundoDash">
+                <div>
+                    <h3 class="TituloDash">Empresa E</h3>
+                    <table class="tabela" id="tabela8" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableINVIOSEG">
+                            <label id="lbNaoTem8">Não há Dados!</label>
+                            <div id="reload8" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="FundoDash" id="FundoDash">
+                <div>
+                    <h3 class="TituloDash">Empresa F</h3>
+                    <table class="tabela" id="tabela9" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Praça</th>
+                                <th>Série</th>
+                                <th>Número</th>
+                                <th>Valor</th>
+                                <th>ICMS</th>
+                                <th>ISS</th>
+                                <th>Data Nota</th>
+                                <th>Hora Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableSERVITE">
+                            <label id="lbNaoTem9">Não há Dados!</label>
+                            <div id="reload9" class="spinner" style="display: flex;"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
